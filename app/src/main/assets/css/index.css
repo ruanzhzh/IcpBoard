@@ -1,0 +1,170 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: url("../img/ggp-gb.jpg") no-repeat;
+  	background-size: 100% 100%;
+  	height: 100vh;
+  	box-sizing: border-box;
+  	position: relative;
+}
+
+@media screen and (min-width: 1800px) {
+    html,body {
+        font-size: 100px;
+    }
+}
+
+.login-container {
+	position: absolute;
+	width: 8.6rem;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.header {
+	text-align: center;
+	background: url(../img/header-bg.png)  no-repeat;
+	background-size: 100% 100%;
+	height: 1.15rem;
+}
+
+.header p {
+	font-size: 0.42rem;
+	background-image:linear-gradient(#fff 40%, #00acfc);
+	-webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    font-weight: 500;
+    padding-top: 0.3rem;
+}
+
+.content {
+	padding: 0.9rem 2rem;
+	background: url(../img/content-bg.png)  no-repeat;
+	background-size: 100% 100%;
+	height: 5rem;
+	box-sizing: border-box;
+}
+
+.content .formList {
+	margin-bottom: 0.4rem;
+    border-radius: 4px;
+    border: 1px solid #019AF8;
+    padding: 0.06rem 0.15rem 0.06rem 0.39rem;
+    box-sizing: border-box;
+    background-size: 0.24rem 0.24rem !important;
+    background-position: 0.15rem 50% !important;
+    display: flex;
+    align-items: center;
+}
+
+.content .formList.ip {
+	background: url(../img/ip.png) no-repeat;
+	margin-top: -0.35rem;
+}
+
+.content .formList.port {
+	background: url(../img/port.png) no-repeat;
+}
+
+.content .formList.context {
+	background: url(../img/context.png) no-repeat;
+    margin-bottom: 0px;
+}
+.content .formList.court {
+	background: url(../img/court.png) no-repeat;
+}
+
+.content .formList.site {
+	background: url(../img/site.png) no-repeat;
+}
+
+.content .formList .label {
+    width: 0.65rem;
+    display: inline-block;
+    padding-left: 0.1rem;
+	color: #fff;
+	position: relative;
+	font-size: 0.14rem;
+}
+
+.content .formList .label::after {
+	content: "";
+	display: inline-block;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 1px;
+	height: 100%;
+	background-color: #019AF8;
+}
+
+.content .formList input,
+.content .formList select {
+	height: 0.45rem;
+	line-height: 0.45rem;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: #c7d7f9;
+	font-size: 0.14rem;
+	padding-left: 0.15rem;
+	width: calc(100% - 0.75rem);
+ 	appearance: none;
+}
+
+.content .formList.process2::after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    right: 0.15rem;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    border-width: 0.10rem 0.08rem 0;
+    border-style: solid;
+    border-color: #019AF8 transparent transparent;
+}
+
+.content .formList input::-webkit-input-placeholder {
+    color: #c7d7f9;
+	font-size: 0.14rem;
+}
+
+.content .btn-group {
+	padding-top: 0.30rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.content .btn-group button {
+    line-height: 0.34rem;
+    width: 1.10rem;
+    background-color: #20ABFB;
+    border: 0;
+    font-size: 0.14rem;
+    color: #fff;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.content .btn-group button.prev {
+	background-color: #0D88CC;
+}
+
+.content .formList.process2,
+button.process2 {
+	display: none;
+ 	position: relative;
+}
+
+.emptyTip {
+	position: absolute;
+	color: red;
+	font-size: 0.14rem;
+}

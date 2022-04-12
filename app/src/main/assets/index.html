@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	    <meta name="renderer" content="webkit">
+	    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<link rel="stylesheet" href="css/index.css" />
+		<script src="js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="js/index.js" ></script>
+	    <title></title>
+	</head>
+	<body>
+		<div class="login-container">
+			<div class="header">
+				<p>智慧公告屏</p>
+			</div>
+			<div class="content">
+				<form id="form">
+					<div class="formList ip process1">
+						<label class="label">访问ip</label>
+						<input id="ip" name="ip" type="text" data-error="请输入访问ip" placeholder="访问ip" />
+					</div>
+					<div class="formList port process1">
+						<label class="label">端口</label>
+						<input id="port" name="port" type="text" data-error="请输入端口" placeholder="端口" />
+					</div>
+					<div class="formList context process1">
+						<label class="label">上下文</label>
+						<input id="context" name="context" type="text" data-error="请输入上下文" placeholder="上下文" value="/"/>
+					</div>
+					
+					<div class="formList court process2">
+						<label class="label">选择法院</label>
+						<select id="court" name="court" data-error="选择法院" placeholder="选择法院">
+							<option value="">---</option>
+						</select>
+					</div>
+					<div class="formList org process2">
+						<label class="label">选择场地</label>
+						<select id="org" name="org" data-error="选择场地" placeholder="选择场地">
+							<option value="">---</option>
+						</select>
+					</div>
+				</form>
+				<div class="btn-group">
+					<button class="next process1">下一步</button>
+					<button class="prev process2">上一步</button>
+					<button class="sumbit process2">确定</button>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
