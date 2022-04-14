@@ -11,6 +11,27 @@ body {
   	position: relative;
 }
 
+@media screen and (min-width: 1000px) {
+  html,body {
+      font-size: 100px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  html,body {
+      font-size: 100px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  html,body {
+      font-size: 100px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  html,body {
+      font-size: 100px;
+  }
+}
+
 @media screen and (min-width: 1800px) {
     html,body {
         font-size: 100px;
