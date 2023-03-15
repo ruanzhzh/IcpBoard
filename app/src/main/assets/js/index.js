@@ -110,14 +110,17 @@ $(document).on('click', "button.sumbit", function(e) {
 })
 
 function showEmptyTargetWord(target, errorMsg) {
-	$("body .emptyTip").remove()
-	let dom = target[0]
-	let left = dom.getBoundingClientRect().x - 90
-	let top = dom.getBoundingClientRect().bottom + 10
-	let style = "left:" + left +"px; top:" + top + "px;"
+//	$("body .emptyTip").remove()
+//	let dom = target[0]
+//	let left = dom.getBoundingClientRect().x - 90
+//	let top = dom.getBoundingClientRect().bottom + 10
+//	let style = "left:" + left +"px; top:" + top + "px;"
+//	var msg = errorMsg == undefined?target.attr("data-error"):errorMsg;
+//	let errorTip = "<p class='emptyTip' style='" + style + "'>" + msg + "</p>"
+//	$("body").append(errorTip)
+	$(".emptyTip").hide()
 	var msg = errorMsg == undefined?target.attr("data-error"):errorMsg;
-	let errorTip = "<p class='emptyTip' style='" + style + "'>" + msg + "</p>"
-	$("body").append(errorTip)
+	target.next().show().html(msg);
 }
 
 

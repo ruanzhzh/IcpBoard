@@ -1,3 +1,4 @@
+/** 竖屏样式 **/
 * {
 	margin: 0;
 	padding: 0;
@@ -11,6 +12,9 @@ body {
   	position: relative;
 }
 
+html,body {
+  font-size: 60px;
+}
 @media screen and (min-width: 1000px) {
   html,body {
       font-size: 100px;
@@ -105,12 +109,13 @@ body {
 }
 
 .content .formList .label {
-    width: 0.65rem;
+    width: 1.1rem;
     display: inline-block;
     padding-left: 0.1rem;
 	color: #fff;
 	position: relative;
-	font-size: 0.14rem;
+	font-size: 0.2rem;
+    /*transform: scale(0.8);*/
 }
 
 .content .formList .label::after {
@@ -132,10 +137,11 @@ body {
     outline: none;
     border: none;
     color: #c7d7f9;
-	font-size: 0.14rem;
+	font-size: 0.2rem;
 	padding-left: 0.15rem;
 	width: calc(100% - 0.75rem);
  	appearance: none;
+ 	/*transform: scale(0.8) translate(-0.4rem, 0.03rem);*/
 }
 
 .content .formList.process2::after {
@@ -154,7 +160,8 @@ body {
 
 .content .formList input::-webkit-input-placeholder {
     color: #c7d7f9;
-	font-size: 0.14rem;
+	font-size: 0.2rem;
+    /*transform: scale(0.8) translateX(-0.4rem);*/
 }
 
 .content .btn-group {
@@ -165,11 +172,12 @@ body {
 }
 
 .content .btn-group button {
-    line-height: 0.34rem;
+    line-height: 0.5rem;
     width: 1.10rem;
     background-color: #20ABFB;
     border: 0;
-    font-size: 0.14rem;
+    font-size: 0.3rem;
+	transform: scale(0.8);
     color: #fff;
     border-radius: 2px;
     cursor: pointer;
@@ -188,7 +196,8 @@ button.process2 {
 .emptyTip {
 	position: absolute;
 	color: red;
-	font-size: 0.14rem;
+	font-size: 0.3rem;
+	transform: scale(0.8);
 	left: 0.39rem;
 	top: 100%;
 	display: none;

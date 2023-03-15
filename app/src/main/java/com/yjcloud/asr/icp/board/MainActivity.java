@@ -9,6 +9,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
+import android.content.res.Configuration;
 import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
@@ -170,7 +171,12 @@ public class MainActivity extends Activity {
             webview.loadUrl("http://debugtbs.qq.com/");
             Toast.makeText(this,"X5内核未启动，请先安装线上内核", Toast.LENGTH_LONG).show();
         }else{
-            webview.loadUrl("file:///android_asset/index.html"); //显示本地网页
+            //显示本地网页
+            if(this.getResources().getConfiguration().orientation == Configuration.ORIENTATION_PORTRAIT){
+                webview.loadUrl("file:///android_asset/ptindex.html"); // 竖屏
+            }else{
+                webview.loadUrl("file:///android_asset/index.html"); // 横屏
+            }
         }
 
         webview.setWebViewClient(new MyWebViewClient());
